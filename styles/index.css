@@ -1,0 +1,311 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+@font-face {
+  font-family: "TTFirsNeueDemiBold";
+  src: url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.eot");
+  src: url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.woff") format("woff"),
+    url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/*
+------------------------------------------
+Первый хедер
+------------------------------------------
+*/
+
+.first-header {
+  border-bottom: 1px solid rgba(56, 59, 74, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.first-header__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.first-header__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.first-header__list-item {
+  padding: 24px 20px;
+  opacity: 0.4;
+}
+
+.first-header__list-item__active {
+  opacity: 1;
+  position: relative;
+}
+
+.first-header__list-item__active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 20px;
+  background: #16ff00;
+  margin: 0 auto;
+}
+
+.first-header__right {
+  display: flex;
+  gap: 60px;
+}
+
+.first-header__right-left {
+  padding: 8px 13px;
+  border-radius: 23px;
+  border: 1px solid #01fdc9;
+}
+
+.first-header__right-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*
+------------------------------------------
+Второй хедер
+------------------------------------------
+*/
+
+.second-header {
+  line-height: 140%;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-header__list {
+  display: flex;
+  gap: 42px;
+}
+
+.second-header__list-link--active {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*
+------------------------------------------
+Секция FRONT
+------------------------------------------
+*/
+
+main {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.front {
+  padding: 71px 0 83px 80px;
+  border-radius: 0px 0px 80px 80px;
+  background: linear-gradient(108deg, #6f6dca 18.23%, #906dca 81.11%);
+  position: relative;
+  color: white;
+  margin: 0 20px;
+}
+
+.front-container {
+  max-width: 660px;
+}
+
+.front__title {
+  margin-bottom: 10px;
+}
+
+.front__text {
+  margin-bottom: 40px;
+  max-width: 515px;
+}
+
+.front__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.front__number-title {
+  margin-bottom: 18px;
+}
+
+.front__number-70px {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.front__aplication-btn {
+  padding: 8px 21px;
+  border-radius: 3px;
+  background: var(
+    --basic-colors-gradient,
+    linear-gradient(90deg, #16ff00 0%, #4dffc9 99.91%, #4dffc9 99.91%)
+  );
+  box-shadow: 0px 4px 20px 0px rgba(56, 59, 74, 0.2);
+  margin-right: 10px;
+}
+
+.front__consultation-btn {
+  padding: 8px 21px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 46, 69, 0.1);
+}
+
+.front__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*
+------------------------------------------
+Секция MSP
+------------------------------------------
+*/
+
+.msp {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.msp__plus-img {
+  position: absolute;
+  top: -24px;
+  left: 68px;
+}
+
+.msp__title {
+  max-width: 740px;
+  margin-bottom: 20px;
+}
+
+.msp__text {
+  font-weight: 400;
+  max-width: 576px;
+}
+
+.msp__blocks {
+  display: flex;
+  gap: 105px;
+  align-items: flex-end;
+}
+
+.msp__left {
+  display: flex;
+  gap: 90px;
+}
+
+.msp__left-title {
+  margin-top: 10px;
+}
+
+.msp__left-text {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.msp__number {
+  padding: 40px 100px 40px 40px;
+  position: relative;
+}
+
+.msp__number-title {
+  margin-bottom: 24px;
+}
+
+.msp__number-list {
+  display: flex;
+  gap: 10px;
+}
+
+.msp__number-number {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.msp__img {
+  position: absolute;
+  top: -52px;
+  right: 0;
+  z-index: 10;
+}
+
+.msp__elipse {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*
+------------------------------------------
+Сохраненые стили
+------------------------------------------
+*/
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  /* font-weight: 400; */
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
