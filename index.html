@@ -10,6 +10,7 @@
     <header class="container">
       <div class="first-header">
         <div class="first-header__left">
+          <img src="header-logo.svg" alt="" class="header-logo" />
           <img src="Dark.png" alt="логотип" class="logo" />
           <ul class="first-header__list">
             <li class="first-header__list-item first-header__list-item__active">
@@ -25,7 +26,8 @@
           <div class="first-header__right-left">Кластер "Ломоносов"</div>
           <div class="first-header__right-right">
             <div class="login">Авторизация</div>
-            <img src="user.png" alt="Авторизация" class="login-img" />
+            <img class="login-img" src="user.png" alt="Авторизация" />
+            <img class="login-burger" src="front-burger.svg" alt="burger" />
           </div>
         </div>
       </div>
@@ -100,7 +102,7 @@
           </div>
           <button class="front__aplication-btn">Подать заявку</button>
           <button class="front__consultation-btn">Получить консультацию</button>
-          <img class="front__img" src="main-back.png" alt="" />
+          <img class="front__img front__img-back" src="main-back.png" alt="" />
           <img class="front__img" src="main-front.png" alt="" />
         </div>
       </section>
@@ -117,15 +119,23 @@
           <div class="msp__blocks">
             <div class="msp__left">
               <div class="msp__left-block">
-                <img class="msp__left-img" src="msp-1.svg" alt="" />
-                <img class="msp__left-img" src="msp-2.png" alt="" />
-                <h4 class="msp__left-title">МСП Банк и Корпорация МСП</h4>
-                <h4 class="msp__left-text">выдают заемные средства</h4>
+                <div class="msp__left-blockimages">
+                  <img class="msp__left-img" src="msp-1.svg" alt="" />
+                  <img class="msp__left-img" src="msp-2.png" alt="" />
+                </div>
+                <div class="msp__left-blocktext">
+                  <h4 class="msp__left-title">МСП Банк и Корпорация МСП</h4>
+                  <h4 class="msp__left-text">выдают заемные средства</h4>
+                </div>
               </div>
               <div class="msp__left-block">
-                <img class="msp__left-img" src="msp-3.png" alt="" />
-                <h4 class="msp__left-title">Правительство Москвы</h4>
-                <h4 class="msp__left-text">субсидирует ставку по кредиту</h4>
+                <div class="msp__left-blockimages">
+                  <img class="msp__left-img" src="msp-3.png" alt="" />
+                </div>
+                <div class="msp__left-blocktext">
+                  <h4 class="msp__left-title">Правительство Москвы</h4>
+                  <h4 class="msp__left-text">субсидирует ставку по кредиту</h4>
+                </div>
               </div>
             </div>
             <div class="msp__number">
