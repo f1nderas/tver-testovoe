@@ -1,16 +1,20 @@
 @font-face {
-  font-family: "TT";
+  font-family: "TT400";
   src: url("../fonts/TT\ Firs\ Neue\ Normal.ttf");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
 }
 @font-face {
-  font-family: "TT";
+  font-family: "TT500";
   src: url("../fonts/TT\ Firs\ Neue\ Medium.ttf");
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
+}
+@font-face {
+  font-family: "TT600";
+  src: url("../fonts/TT\ Firs\ Neue\ DemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
 }
 
 * {
@@ -19,7 +23,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: TT;
+  font-family: "TT400";
   font-size: 14px;
   font-style: normal;
 }
@@ -27,6 +31,13 @@ body {
 ol,
 ul {
   list-style: none;
+}
+
+button {
+  font-family: "TT400";
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
 
 a {
@@ -52,6 +63,7 @@ a {
   align-items: center;
   font-weight: 500;
   line-height: 120%;
+  height: 70px;
 }
 
 .first-header__left {
@@ -67,7 +79,7 @@ a {
 }
 
 .first-header__list-item {
-  padding: 24px 20px;
+  padding: 27px 20px 24px 20px;
   opacity: 0.4;
 }
 
@@ -90,13 +102,18 @@ a {
 
 .first-header__right {
   display: flex;
-  gap: 60px;
+  gap: 57px;
 }
 
 .first-header__right-left {
-  padding: 8px 13px;
+  padding: 7px 10px;
   border-radius: 23px;
   border: 1px solid #01fdc9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  font-family: "TT500";
 }
 
 .first-header__right-right {
@@ -124,6 +141,7 @@ a {
   padding: 20px 0;
   align-items: center;
   justify-content: space-between;
+  height: 52px;
 }
 
 .second-header__list {
@@ -159,7 +177,7 @@ main {
 }
 
 .front-container {
-  max-width: 660px;
+  max-width: 670px;
 }
 
 .front__title {
@@ -178,8 +196,18 @@ main {
   margin-bottom: 40px;
 }
 
+.front__number-text {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
 .front__number-title {
   margin-bottom: 18px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
 }
 
 .front__number-70px {
@@ -196,13 +224,22 @@ main {
     linear-gradient(90deg, #16ff00 0%, #4dffc9 99.91%, #4dffc9 99.91%)
   );
   box-shadow: 0px 4px 20px 0px rgba(56, 59, 74, 0.2);
-  margin-right: 10px;
+  margin-right: 6px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .front__consultation-btn {
-  padding: 8px 21px;
+  padding: 8px 19px;
   border-radius: 3px;
   box-shadow: 0px 4px 20px 0px rgba(0, 46, 69, 0.1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  font-family: "TT500";
 }
 
 .front__img {
@@ -226,33 +263,45 @@ main {
 
 .msp__plus-img {
   position: absolute;
-  top: -24px;
-  left: 68px;
+  top: -32px;
+  left: 69px;
 }
 
 .msp__title {
-  max-width: 740px;
+  max-width: 790px;
   margin-bottom: 20px;
 }
 
 .msp__text {
   font-weight: 400;
-  max-width: 576px;
+  max-width: 600px;
 }
 
 .msp__blocks {
   display: flex;
-  gap: 105px;
-  align-items: flex-end;
 }
 
 .msp__left {
   display: flex;
-  gap: 90px;
+  gap: 87px;
+  margin-top: 50px;
+  margin-right: 101px;
+}
+
+.msp__left-block {
+  max-width: 274px;
+}
+
+.msp__left-blockimages {
+}
+
+.msp__left-imgimg {
+  margin-left: -11px;
+  margin-top: 2px;
 }
 
 .msp__left-title {
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .msp__left-text {
@@ -261,17 +310,18 @@ main {
 }
 
 .msp__number {
-  padding: 40px 100px 40px 40px;
+  padding: 40px 10px 40px 40px;
   position: relative;
 }
 
 .msp__number-title {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+  max-width: 270px;
 }
 
 .msp__number-list {
   display: flex;
-  gap: 10px;
+  gap: 38px;
 }
 
 .msp__number-number {
@@ -300,18 +350,21 @@ main {
 */
 
 h2 {
+  font-family: "TT500";
   font-size: 40px;
   font-weight: 500;
   line-height: 110%;
 }
 
 h3 {
+  font-family: "TT500";
   font-size: 24px;
   font-weight: 500;
   line-height: 120%;
 }
 
 h4 {
+  font-family: "TT500";
   font-size: 18px;
   font-weight: 500;
   /* font-weight: 400; */
@@ -319,6 +372,7 @@ h4 {
 }
 
 h5 {
+  font-family: "TT400";
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -540,5 +594,8 @@ h5 {
 
   .first-header__right-right {
     gap: 20px;
+  }
+  .msp__left-imgimg {
+    margin: 0;
   }
 }
