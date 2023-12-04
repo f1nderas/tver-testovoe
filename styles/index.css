@@ -1,9 +1,25 @@
+@font-face {
+  font-family: "TT";
+  src: url("../fonts/TT\ Firs\ Neue\ Normal.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT";
+  src: url("../fonts/TT\ Firs\ Neue\ Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body {
+  font-family: TT;
   font-size: 14px;
   font-style: normal;
 }
@@ -20,17 +36,6 @@ a {
 
 .container {
   margin: 0 100px;
-}
-
-@font-face {
-  font-family: "TTFirsNeueDemiBold";
-  src: url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.eot");
-  src: url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.woff") format("woff"),
-    url("../fonts/TTFirsNeueDemiBold/TTFirsNeueDemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 600;
 }
 
 /*
