@@ -285,11 +285,11 @@ main {
   display: flex;
   gap: 87px;
   margin-top: 50px;
-  margin-right: 101px;
+  margin-right: 96px;
 }
 
 .msp__left-block {
-  max-width: 274px;
+  max-width: 282px;
 }
 
 .msp__left-blockimages {
@@ -310,12 +310,12 @@ main {
 }
 
 .msp__number {
-  padding: 40px 10px 40px 40px;
+  padding: 40px 90px 40px 40px;
   position: relative;
 }
 
 .msp__number-title {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   max-width: 270px;
 }
 
@@ -328,12 +328,13 @@ main {
   display: flex;
   gap: 6px;
   align-items: flex-end;
+  margin-bottom: 4px;
 }
 
 .msp__img {
   position: absolute;
-  top: -52px;
-  right: 0;
+  top: -59px;
+  right: 14px;
   z-index: 10;
 }
 
